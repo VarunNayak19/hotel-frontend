@@ -1,0 +1,64 @@
+.no-page-container{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.title{
+    color:  #2C2F24;
+    text-align: center;
+    font-size: 55px !important;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60.5px;
+}
+
+.image-section{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    height: auto;
+    .doughnut-img{
+       height: 175px; 
+       width: 175px;
+       margin-left: 15px;
+    }
+    .text{
+        font-size: 210px;
+        font-family: "Bangers";
+        text-shadow: 5px 5px 5px rgba(101, 67, 33, 0.7);    
+    }
+}
+
+.subtitle-section{
+    width: 50%;
+    color: #414536;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* Define keyframes for the rotation animation */
+@keyframes rotate {
+    from {
+      transform: rotate(0deg); /* Initial rotation angle */
+    }
+    to {
+      transform: rotate(1120deg); /* Final rotation angle (360 degrees) */
+    }
+  }
+  
+  /* Apply the animation to the specific image class */
+  .rotate-image {
+    animation-name: rotate; /* Use the defined keyframes */
+    animation-duration: 15s; /* Duration of the rotation (6 seconds in this example) */
+    animation-timing-function: linear; /* Linear timing function (constant speed) */
+    // animation-iteration-count: infinite; /* Rotate infinitely */
+  }
+  

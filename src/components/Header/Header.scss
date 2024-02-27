@@ -1,0 +1,106 @@
+.header-container{
+    height: auto;
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 20px 125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo-section{
+        position: relative;
+        height: auto;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+
+        span{
+            font-family: 'Playfair Display', serif;
+            color: #474747;
+            font-size: 28px;
+            font-style: italic;
+            font-weight: 600;
+            letter-spacing: -0.4px;
+        }
+    }
+
+    .nav-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        .background-css{
+            position: absolute;
+            width:100px;
+            height: 100%;
+            border-radius: 34px;
+            background: #DBDFD0;
+            z-index: 1;
+            transition: all 0.4s ease-in-out;
+        }
+        .background-css-empty{
+            display: none;
+        }
+        .background-css-1{
+            top: 0px;
+            left: 0px;
+        }
+        .background-css-2{
+            top: 0px;
+            left: 110px;
+        }
+        .background-css-3{
+            top: 0px;
+            left: 220px;
+        }
+        .background-css-4{
+            top: 0px;
+            left: 330px;
+        }
+        .background-css-5{
+            top: 0px;
+            left: 440px;
+        }
+        .nav-items{
+            user-select: none;
+            font-family: 'DM Sans', sans-serif;
+            padding: 4px 16px;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            color: #2C2F24;
+            width: 100px;
+            text-align: center;
+            z-index: 2;
+            border-radius: 34px;
+        }
+    }
+    .book-table-button{
+        outline: none;
+        background-color: whitesmoke;
+        padding: 12px 24px;
+        border-radius: 118px;
+        border: 1.5px solid #2C2F24;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        color: #2C2F24;
+        text-align: center;
+    }
+    .book-table-button:hover{
+        background-color: #2C2F24;
+        color: whitesmoke;
+        font-size: 16.5px;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+//media query below 1024px
+@media only screen and (max-width: 1024px){
+    .header-container{
+        padding: 20px 50px;
+    }
+}
